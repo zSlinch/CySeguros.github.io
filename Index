@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jungle</title>
+    <link rel="stylesheet" href="css/n1.css">
+    <link rel="icon" href="icon/jungle.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+
+
+    <nav>
+        <div id="mySidebar" class="sidebar"> 
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+        <div class="div-img">  
+            <!-- <img src="imagem/house.png" class="img"> <a href="#">Home</a> -->
+            <img src="imagem/register.png" class="img"> <a href="#">Cadastrar</a>
+            <img src="imagem/login.png" class="img"> <a href="#">Logar</a>
+
+            <div class="information">
+                
+                <div class="inf"> &#10086; 
+                    <div class="inf-h"> Use máscaras nas academias <br> 
+                        para prevençao do covid-19<br>
+                          Total de casos no Brasil: 19.749.073
+                    </div>
+                </div> 
+                
+            </div>
+
+        </div>  
+
+        </div>
+  
+        <div id="main">
+            <button class="openbtn" onclick="openNav()"> ☰ </button>
+        </div>
+
+    
+        <img src="imagem/img-s.png" class="img2">
+        <p class="id"> Jungle </p>
+
+        <input type="search" class="buscar">
+
+    </nav>
+
+    <div id="loader"></div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        
+        <div class="tabela">
+            
+        </div>
+
+    </div>
+
+
+<!-- Loader -->
+
+    <script>
+
+    var myVar;
+
+    function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
+
+    function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+    }
+
+    </script>
+
+<!-- Menu -->
+
+    <script>
+
+    function openNav() {
+        document.getElementById("mySidebar").style.width = "300px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+    }
+
+    </script>
+</body>
+</html>
